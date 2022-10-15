@@ -1,0 +1,20 @@
+body {
+    background: #09427b;
+    letter-spacing: 1px;
+    background: linear-gradient(-45deg, #3970a6, #348ce3, #820909, #0863bf);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: aliceblue;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
