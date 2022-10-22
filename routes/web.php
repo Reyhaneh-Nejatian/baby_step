@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [\App\Http\Controllers\InformationController::class, 'create']);
+Route::get('/', [\App\Http\Controllers\InformationController::class, 'index']);
+
+Route::get('/information', [\App\Http\Controllers\InformationController::class, 'show'])->name('information');
+Route::get('/test', [\App\Http\Controllers\InformationController::class, 'test'])->name('test');
 Route::post('/information', [\App\Http\Controllers\InformationController::class, 'store'])->name('information.store');
+Route::post('/test', [\App\Http\Controllers\InformationController::class, 'testCreate'])->name('test.create');
